@@ -1,0 +1,26 @@
+//Pseudoclases
+
+a{
+    color: white;
+    font-family: $font-Oswald;
+    font-size: 35px;
+    background-color: $rojo;
+}
+
+a:link{
+    color: aliceblue;
+}
+
+a:visited{
+    color: burlywood;
+}
+
+a:hover{
+    background-color: white;
+    color: $rojo;
+}
+
+a:active{
+    background-color: white;
+    color: $negro;
+}

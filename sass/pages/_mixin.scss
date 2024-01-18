@@ -1,0 +1,5 @@
+//Función de Mixin
+@mixin tamanio ($ancho, $alto){
+    width: $ancho;
+    width: $alto;
+}
