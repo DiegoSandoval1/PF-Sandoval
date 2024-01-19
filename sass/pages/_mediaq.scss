@@ -1,10 +1,11 @@
 //Mediaq
 
-//PC
+//Mobile
 
 @media only screen and (max-width: 500px) {
+    
     body{
-        background-color: crimson;
+        background-color: $negro;
     }
 
     h1{
@@ -23,13 +24,10 @@
         font-size: 15px;
     }
 
-
     .galeria_de_videos{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        
     }
 
     .review{
@@ -37,20 +35,30 @@
         width: 350px;
         height: 200px;
     }
-}
+
+    .perfil{
+        display: flex;
+        justify-content: center;
+    }
+
+    .animacion{
+        display: flex;
+        justify-content: center;
+    }
+}    
 
 //Table
 
 @media only screen and (min-width: 501px) and (min-width: 950px){
     body{
-        background-color: black;
+        background-color: $negro;
     }
 }
 
 //desktop
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 961px){
     body{
-        background-color: black;
+        background-color: $negro;
     }
 }

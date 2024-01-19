@@ -18,6 +18,11 @@ a:visited{
 a:hover{
     background-color: white;
     color: $rojo;
+    animation-name: true_animacion;
+    transition: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 
 a:active{

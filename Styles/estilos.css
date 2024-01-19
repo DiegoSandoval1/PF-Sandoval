@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Comic+Neue:wght@300&display=swap");
 @media only screen and (max-width: 500px) {
   body {
-    background-color: crimson;
+    background-color: rgb(10, 9, 9);
   }
   h1 {
     font-size: 10px;
@@ -28,15 +28,23 @@
     width: 350px;
     height: 200px;
   }
+  .perfil {
+    display: flex;
+    justify-content: center;
+  }
+  .animacion {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 501px) and (min-width: 950px) {
   body {
-    background-color: black;
+    background-color: rgb(10, 9, 9);
   }
 }
 @media only screen and (min-width: 961px) {
   body {
-    background-color: black;
+    background-color: rgb(10, 9, 9);
   }
 }
 html {
@@ -45,14 +53,6 @@ html {
 
 .bg-soul {
   background-color: rgb(233, 8, 8);
-}
-
-a:hover {
-  animation-name: true_animacion;
-  transition: 2s;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-delay: 0s;
 }
 
 .titulos {
@@ -77,8 +77,11 @@ a:hover {
 .cuerpo_de_la_pagina h1:hover {
   animation-name: true_animacion;
   transition: 2s;
+  /*tiempo de repeticion*/
   animation-iteration-count: infinite;
+  /*durción de la animación*/
   animation-duration: 4s;
+  /*cuanto tarda en cargar*/
   animation-delay: 0s;
 }
 .cuerpo_de_la_pagina .primera_parte {
@@ -94,6 +97,10 @@ a:hover {
   border-style: solid;
   border-color: rgb(10, 9, 9);
   border-width: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.cuerpo_de_la_pagina .primera_parte .perfil:hover {
+  transform: scale(1.2);
 }
 .cuerpo_de_la_pagina .espacio {
   border: rgb(10, 9, 9);
@@ -111,13 +118,24 @@ a:hover {
   border-width: 5px;
   display: flex;
   align-self: flex-end;
+  transition: transform 0.3s ease-in-out;
+}
+.cuerpo_de_la_pagina .segunda_parte .animacion:hover {
+  transform: scale(1.2);
 }
 
 .galeria_de_videos {
   margin-top: 150px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   border: solid 5px rgb(233, 8, 8);
+}
+.galeria_de_videos iframe {
+  transition: transform 0.3s ease-in-out;
+}
+.galeria_de_videos iframe:hover {
+  transform: scale(1.1);
 }
 
 .The_Art {
@@ -127,18 +145,31 @@ a:hover {
   font-family: "Oswald", sans-serif;
   font-size: 32px;
 }
+.The_Art .card {
+  transition: transform 0.3s ease-in-out;
+}
+.The_Art .card:hover {
+  transform: scale(1.2);
+}
+
+.card_games {
+  display: flex;
+  justify-content: center;
+}
 
 .carousel_2 {
+  margin-top: 10px;
+  margin-bottom: 150px;
   background-color: rgb(10, 9, 9);
 }
 
 .Contact {
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   font-family: "Chivo", sans-serif;
   font-size: 25px;
   color: aliceblue;
-  margin-top: 150px;
 }
 
 form {
@@ -148,6 +179,7 @@ form {
   font-size: 30px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: rgb(233, 8, 8);
+  margin-bottom: 100px;
 }
 
 @keyframes true_animacion {
@@ -164,7 +196,7 @@ form {
     transform: rotate(3deg);
   }
   100% {
-    color: goldenrod;
+    color: rgb(10, 9, 9);
   }
 }
 a {
@@ -185,6 +217,11 @@ a:visited {
 a:hover {
   background-color: white;
   color: rgb(233, 8, 8);
+  animation-name: true_animacion;
+  transition: 2s;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 0s;
 }
 
 a:active {

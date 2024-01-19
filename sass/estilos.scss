@@ -23,17 +23,6 @@ html {
     background-color: $rojo;
 }
 
-a:hover{
-    animation-name: true_animacion;
-        transition: 2s;
-         /*tiempo de repeticion*/
-        animation-iteration-count: infinite;
-        /*durción de la animación*/
-        animation-duration: 3s;
-        /*cuanto tarda en cargar*/
-        animation-delay: 0s;
-}
-
 .titulos {
     color: white;
     font-family: $font-Oswald;
@@ -54,7 +43,7 @@ a:hover{
         font-size: 50px;
     }
 
-    //hover del h1
+    //hover y animación del h1
 
     h1:hover{
         animation-name: true_animacion;
@@ -80,6 +69,10 @@ a:hover{
             border-style: solid;
             border-color: $negro;
             border-width: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .perfil:hover{
+            transform: scale(1.2);
         }
     }
 
@@ -99,15 +92,26 @@ a:hover{
             border-width: 5px;
             display: flex;
             align-self: flex-end;
+            transition: transform 0.3s ease-in-out;
+        }
+        .animacion:hover {
+            transform: scale(1.2);
         }
     }
 }
 
 .galeria_de_videos {
     margin-top: 150px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
     border: solid 5px $rojo;
+    iframe{
+        transition: transform 0.3s ease-in-out;
+    }
+    iframe:hover{
+        transform: scale(1.1); 
+    }
 }
 
 .The_Art {
@@ -116,20 +120,33 @@ a:hover{
     background-color: $negro;
     font-family: $font-Oswald;
     font-size: 32px;
+    .card{
+        transition: transform 0.3s ease-in-out;
+    }
+    .card:hover{
+        transform: scale(1.2); 
+    }
 
 }
 
+.card_games{
+    display: flex;
+    justify-content: center;
+}
+
 .carousel_2 {
+    margin-top: 10px;
+    margin-bottom: 150px;
     background-color: $negro;
 }
 
 .Contact {
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     font-family: $font-Chivo;
     font-size: 25px;
     color: aliceblue;
-    margin-top: 150px;
 }
 
 form {
@@ -139,28 +156,12 @@ form {
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: $rojo;
+    margin-bottom: 100px;
 }
 
-//animaciones
+//Partial animaciones
 
-@keyframes true_animacion{
-    0%{
-        transform: rotate(-3deg);
-    }
-    25%{
-        transform: rotate(3deg);
-    }
-    50%{
-        transform: rotate(-3deg);
-    }
-    75%{
-        transform: rotate(3deg);
-        
-    }
-    100%{
-        color: goldenrod;
-    }
-}
+@import "pages/animaciones";
 
 //Partial de Pseudoclasses
 @import "pages/pseudiclasses";
