@@ -19,6 +19,17 @@ html {
     background-color: $negro;
 }
 
+body {
+    margin-top: 70px;
+    margin-bottom: 3.5rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .bg-soul {
     background-color: $rojo;
 }
@@ -101,8 +112,8 @@ html {
 }
 
 .galeria_de_videos {
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 3.5rem;
     display: flex;
     justify-content: space-around;
     border: solid 5px $rojo;
@@ -114,24 +125,29 @@ html {
     }
 }
 
-.The_Art {
-    margin-top: 150px;
-    color: $negro;
-    background-color: $negro;
-    font-family: $font-Oswald;
-    font-size: 32px;
-    .card{
+.art_gallery {
+    padding-top: 170px;
+    padding-bottom: 100px;
+
+    .card {
+        background-color: bisque;
+        .card-body {
+            display: flex;
+            justify-content: center;
+            font-family: $font-Oswald;
+            font-size: 23px;
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
         transition: transform 0.3s ease-in-out;
     }
-    .card:hover{
-        transform: scale(1.2); 
+
+    img:hover {
+        transform: scale(1.1); 
     }
-
-}
-
-.card_games{
-    display: flex;
-    justify-content: center;
 }
 
 .carousel_2 {
