@@ -173,12 +173,6 @@ body {
   transform: scale(1.1);
 }
 
-.carousel_2 {
-  margin-top: 10px;
-  margin-bottom: 150px;
-  background-color: rgb(10, 9, 9);
-}
-
 .Contact {
   margin-top: 150px;
   display: flex;
