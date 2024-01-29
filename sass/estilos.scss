@@ -59,11 +59,8 @@ body {
     h1:hover{
         animation-name: true_animacion;
         transition: 2s;
-         /*tiempo de repeticion*/
         animation-iteration-count: infinite;
-        /*durción de la animación*/
         animation-duration: 4s;
-        /*cuanto tarda en cargar*/
         animation-delay: 0s;
     }
 
