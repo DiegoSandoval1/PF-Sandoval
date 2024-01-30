@@ -114,6 +114,7 @@ body {
   border: rgb(10, 9, 9);
 }
 .cuerpo_de_la_pagina .segunda_parte {
+  padding-bottom: 100px;
   background-color: rgb(233, 8, 8);
   display: flex;
   flex-direction: column;
